@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Attendance App</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>On Time</h1>
+    <p id="onTimeCount">0</p>
+    <div class="buttons">
+      <button onclick="addAttendance(1, 'onTimeCount')">+1</button>
+      <button onclick="addAttendance(2, 'onTimeCount')">+2</button>
+      <button onclick="addAttendance(3, 'onTimeCount')">+3</button>
+      <button onclick="resetCount('onTimeCount')">Reset</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Late</h1>
+    <p id="lateCount">0</p>
+    <div class="buttons">
+      <button onclick="addAttendance(1, 'lateCount')">+1</button>
+      <button onclick="addAttendance(2, 'lateCount')">+2</button>
+      <button onclick="addAttendance(3, 'lateCount')">+3</button>
+      <button onclick="resetCount('lateCount')">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
